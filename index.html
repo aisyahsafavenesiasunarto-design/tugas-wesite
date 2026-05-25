@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Aisyah safa venesia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        pinksoft: '#FCE4EC',
+                        primary: '#F48FB1',
+                        secondary: '#F8BBD0',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-6px);
+            }
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white font-sans text-gray-700">
+
+    <!-- Header / Hero Section -->
+    <header class="py-16 px-6 bg-gradient-to-br from-pinksoft to-white">
+        <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+            <div class="text-center md:text-left">
+                <h1 class="text-[clamp(1.8rem,5vw,3.2rem)] font-bold leading-tight text-gray-800">
+                    Halo, Saya <span class="text-primary">Aisyah safa venesia</span>
+                </h1>
+                <p class="mt-4 text-lg text-gray-600">Pelajar SMKN 1 BANGKINANG</p>
+                <a href="#contact" class="inline-block mt-6 px-8 py-3 bg-primary text-white font-semibold rounded-full shadow-md hover:bg-secondary transition duration-300">
+                    Hubungi Saya
+                </a>
+            </div>
+            <!-- Foto Profil -->
+            <div class="w-60 h-60 rounded-3xl overflow-hidden shadow-xl border-4 border-white">
+                <img src=https://i.ibb.co.com/cKZ305C0/IMG-20260425-WA0021.jpg alt="Foto Aisyah" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-16">
+        
+        <!-- About Me Section -->
+        <section id="about" class="mb-20">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Tentang <span class="text-primary">Saya</span></h2>
+            <div class="bg-pinksoft/50 p-8 rounded-3xl shadow-sm border border-pink-50">
+                <p class="text-lg leading-relaxed text-gray-600 text-center">
+                    Hallo nama saya <strong class="text-primary">Aisyah safa venesia</strong>, 
+                    saya seorang siswa <strong>SMK Negeri 1 Bangkinang</strong>.
+                    <br class="hidden md:block">
+                    Saya mempunyai hobi seperti, bermain game online yaitu <strong>Free Fire</strong>, 
+                    main <strong>voli / badminton</strong> dan <strong>mendengarkan musik</strong>.
+                </p>
+            </div>
+        </section>
+
+        <!-- Projects / Gallery Section -->
+        <section id="gallery" class="mb-20">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Galeri <span class="text-primary">Hobi</span></h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Item 1 -->
+                <div class="group rounded-2xl overflow-hidden shadow-lg bg-white card-hover border border-gray-100">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://picsum.photos/seed/gameff/400/300" alt="Free Fire" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg text-primary">Free Fire</h3>
+                        <p class="text-sm text-gray-500">Game Online Favorit</p>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="group rounded-2xl overflow-hidden shadow-lg bg-white card-hover border border-gray-100">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://picsum.photos/seed/volleyball/400/300" alt="Voli" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg text-primary">Bola Voli</h3>
+                        <p class="text-sm text-gray-500">Olahraga Tim</p>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="group rounded-2xl overflow-hidden shadow-lg bg-white card-hover border border-gray-100">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://picsum.photos/seed/badminton/400/300" alt="Badminton" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg text-primary">Badminton</h3>
+                        <p class="text-sm text-gray-500">Raket & Kok</p>
+                    </div>
+                </div>
+                 <!-- Item 4 -->
+                 <div class="group rounded-2xl overflow-hidden shadow-lg bg-white card-hover border border-gray-100">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://picsum.photos/seed/music/400/300" alt="Musik" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg text-primary">Musik</h3>
+                        <p class="text-sm text-gray-500">Mendengarkan Lagu</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-pinksoft py-10">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-4 text-gray-800">Follow Me</h2>
+            <div class="flex justify-center gap-6 mb-6">
+                <a href="https://tiktok.com/@saaaaaa" target="_blank" class="w-14 h-14 flex items-center justify-center rounded-full bg-black text-white hover:bg-gray-800 transition duration-300 shadow-md">
+                    <i class="fa fa-music text-2xl"></i>
+                </a>
+            </div>
+            <p class="text-gray-600 font-semibold">TikTok: @saaaaaa</p>
+            <p class="text-gray-500 text-sm mt-4">&copy; 2024 Aisyah safa venesia - SMKN 1 BANGKINANG</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll animation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
